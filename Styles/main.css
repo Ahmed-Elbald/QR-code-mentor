@@ -16,7 +16,9 @@ button,
 input[type=submit] {
   cursor: pointer;
 }
-
+body {
+  height:100vh;
+}
 .qr-code {
   width: 375px;
   background-color: #d6e2f0;
