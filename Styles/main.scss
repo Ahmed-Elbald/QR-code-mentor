@@ -1,5 +1,7 @@
 @use "../Styles/GMVL" as *;
-
+body {
+  height:100vh;
+}
 .qr-code {
   width: 375px;
   background-color: $bg-color;
