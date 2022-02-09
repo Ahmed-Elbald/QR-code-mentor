@@ -1,0 +1,44 @@
+@use "../Styles/GMVL" as *;
+
+.qr-code {
+  width: 375px;
+  background-color: $bg-color;
+  padding: 4em 1.5em;
+  @include position-centering;
+  @include min-mq(1440px) {
+    width: 1440px;
+    padding: 6em;
+    @include flex-centering;
+    .card {
+      width: 375px - 3 * 16;
+    }
+  }
+  .card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 1em;
+    img {
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      border-radius: 10px;
+    }
+    h2 {
+      color: $header;
+      padding: 1em;
+      text-align: center;
+      font: {
+        size: 1.3rem;
+        weight: 700;
+      }
+    }
+    p {
+      color: $p-color;
+      text-align: center;
+      padding: 0 1em;
+      font: {
+        weight: 400;
+        size: 15px;
+      }
+    }
+  }
+}
