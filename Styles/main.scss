@@ -1,7 +1,9 @@
 @use "../Styles/GMVL" as *;
 
+
 body {
   height: 100vh;
+
   background-color: $bg-color;
   padding: 4em 1.5em;
   @include flex-centering;
@@ -9,14 +11,15 @@ body {
   @include min-mq(1440px) {
     padding: 6em;
   }
+}
 
-  .qr-code {
-    .card {
-      max-width: 325px;
-    }
-  }
+
+
+
+.qr-code {
 
   .card {
+    max-width: 325px;
     background-color: white;
     border-radius: 10px;
     padding: 1em;
@@ -49,4 +52,5 @@ body {
       }
     }
   }
+
 }

@@ -30,27 +30,26 @@ body {
     padding: 6em;
   }
 }
-body .qr-code .card {
+
+.qr-code .card {
   max-width: 325px;
-}
-body .card {
   background-color: white;
   border-radius: 10px;
   padding: 1em;
 }
-body .card img {
+.qr-code .card img {
   width: 100%;
   aspect-ratio: 1/1;
   border-radius: 10px;
 }
-body .card h1 {
+.qr-code .card h1 {
   color: #1f3251;
   padding: 1em;
   text-align: center;
   font-size: 1.3rem;
   font-weight: 700;
 }
-body .card p {
+.qr-code .card p {
   color: #7b879d;
   text-align: center;
   padding: 0 1em;
