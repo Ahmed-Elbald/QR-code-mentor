@@ -17,45 +17,40 @@ input[type=submit] {
   cursor: pointer;
 }
 
-.qr-code {
-  width: 375px;
+body {
+  height: 100vh;
   background-color: #d6e2f0;
   padding: 4em 1.5em;
-  position: absolute;
-  bottom: 50%;
-  right: 50%;
-  transform: translate(50%, 50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 @media (min-width: 1440px) {
-  .qr-code {
-    width: 1440px;
+  body {
     padding: 6em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .qr-code .card {
-    width: 327px;
   }
 }
-.qr-code .card {
+body .qr-code .card {
+  max-width: 325px;
+}
+body .card {
   background-color: white;
   border-radius: 10px;
   padding: 1em;
 }
-.qr-code .card img {
+body .card img {
   width: 100%;
   aspect-ratio: 1/1;
   border-radius: 10px;
 }
-.qr-code .card h2 {
+body .card h1 {
   color: #1f3251;
   padding: 1em;
   text-align: center;
   font-size: 1.3rem;
   font-weight: 700;
 }
-.qr-code .card p {
+body .card p {
   color: #7b879d;
   text-align: center;
   padding: 0 1em;
